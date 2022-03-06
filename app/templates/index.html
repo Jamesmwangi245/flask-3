@@ -1,0 +1,84 @@
+{% extends 'base.html'%}
+{% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}"> {% endblock %}
+{% block content %}
+
+<body>
+  <div></div>
+    <div class="row" style="background-image: url('https://blog.hubspot.com/hubfs/Google%20Drive%20Integration/How%20to%20Start%20Coding%20The%20Ultimate%20Guide%20for%20Beginner%20Programmers.jpeg');
+     background-repeat: no-repeat; background-size: cover;">
+      <div class="welcome" style="height: 700px;text-align: center;margin:0 auto;">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h1 style="color: black;">One minute ,incredible opportunities<br>Which are considered<br> to change the world</h1>
+        <br>
+        <button type="button"
+         class="btn btn-outline-success">Join us Now</button>
+      </div>
+    </div>
+  <div class="row">
+      <br>
+      <br>
+
+      
+    <div class="card-deck"> 
+      <div class="col-md-4" >
+      <div class="card h-25">
+      <div class="card border-success">
+        <div class="card text-center">
+        <div class="card-header">Movies</div>
+        <div class="card-body text-info">
+          <h5 class="card-title">Movie Hub</h5>
+          <p class="card-text">The most incredible thing to do when bored is to watch a movie</p>
+          <button type="button" class="btn btn-outline-secondary"><a href="../pitch/">Add a Pitch</a></button>
+          <button type="button" class="btn btn-outline-secondary"><a href="/categories/Movie">Read Pitches</a></button>
+        </div>
+        </div>
+      </div>
+      
+      </div>
+      </div>
+     
+      <div class="col-md-4">
+      <div class="card border-success">
+        <div class="card text-center">
+        <div class="card-header">Tech</div>
+        <div class="card-body text-info">
+          <h5 class="card-title">Code Arena</h5>
+          <p class="card-text">Good software, like wine, takes time</p>
+          <button type="button" class="btn btn-outline-primary">
+              <a href="../pitch/">Add Pitch</a></button>
+          <button type="button" class="btn btn-outline-primary">
+              <a href="/categories/Tech">Read Pitches</a></button>
+        </div>
+        </div>
+      </div>
+      </div>
+      
+
+      <div class="col-md-4">
+      <div class="card border-success">
+        <div class="card text-center">
+          <div class="card text-center">
+        <div class="card-header">Life</div>
+        <div class="card-body text-info">
+          <h5 class="card-title">Bible Quotes</h5>
+          <p class="card-text">So God created mankind in his own image,
+               in the image of God he created them; male and female he created them.” (Genesis 1:27</p>
+          <button type="button" class="btn btn-outline-success"><a href="../pitch/">Add Pitch</a></button>
+          <button type="button" class="btn btn-outline-success"><a href="/categories/Life">Read Pitches</a></button>
+        </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+  {% endblock%}
+</body>
