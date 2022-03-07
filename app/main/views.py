@@ -5,7 +5,7 @@ from flask import render_template,redirect,url_for
 from . import main
 from .. import db,photos
 from ..models import Pitches,User,Comments
-from .forms import PitchForm,CommentForm,UpdateProfile
+from .forms import PitchForm,CommentForm,updateProfile
 from flask_login import login_required,current_user
 from werkzeug.utils import secure_filename
 
@@ -29,7 +29,7 @@ def new_pitch():
           pitch = form.pitch.data
           comment = form.comment.data
 
-        # new_pitch = Pitches(title = title, category = category, pitch = pitch, user_id=current_user_id)
+          new_pitch = Pitches(title = title, category = category, pitch = pitch, user_id=current_user,comment=comment)
 
           title = 'New Pitch'
 
@@ -64,7 +64,7 @@ def update_profile(uname):
     if user is None:
         abort(404)
 
-    form = UpdateProfile()
+    form = updateProfile()
 
     if form.validate_on_submit():
         user.bio = form.bio.data
