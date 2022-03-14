@@ -5,8 +5,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_login import LoginManager
 from flask_uploads import UploadSet,configure_uploads,IMAGES
 from flask_mail import Mail
-from werkzeug.utils import secure_filename
-from werkzeug.datastructures import  FileStorage
+# from werkzeug.utils import secure_filename
+# from werkzeug.datastructures import  FileStorage
 
 bootstrap = Bootstrap()
 db = SQLAlchemy()
