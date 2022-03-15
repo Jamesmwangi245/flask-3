@@ -8,6 +8,7 @@ class Config:
     SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://piches:moringa-school@localhost/pitch'
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SECRET_KEY = '4fc66dc1f39848ecab196c4806c87b40'
+    SQLALCHEMY_TRACK_MODIFICATION = True
     #  email configurations
     MAIL_SERVER = 'smtp.googlemail.com'
     MAIL_PORT = 587
@@ -39,7 +40,7 @@ class DevConfig(Config):
         Config: The parent configuration class with General configuration settings
     '''
 
-    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://piches:12345@localhost/pitch'
+    SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://jameskariuki:12345@localhost/pitches'
     DEBUG = True
 
 config_options = {

@@ -24,7 +24,7 @@ git
 2. Create a virtual environment
 3. Read the specs and requirements files and Install all the requirements.
 4. Edit the start.sh file with your api key from the news.org website   
-6. Run chmod a+x start.py
+6. virtual/bin/activate
 7. Run ./start.py
 8. Access the application through `localhost:5000`
 
